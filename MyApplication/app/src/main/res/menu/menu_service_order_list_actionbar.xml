@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".controllers.ServiceOrderActivity">
+
+    <item
+        android:id="@+id/actionShare"
+        android:alphabeticShortcut="a"
+        android:icon="@mipmap/ic_action_share"
+        android:orderInCategory="1"
+        android:title="@string/lbl_share" />
+
+    <item
+        android:id="@+id/actionFilter"
+        android:alphabeticShortcut="b"
+        android:orderInCategory="2"
+        android:title="@string/menu_lbl_filter">
+        <menu>
+            <group
+                android:id="@+id/groupFiler"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/filterAll"
+                    android:title="@string/menu_item_lbl_all" />
+                <item
+                    android:id="@+id/filterActive"
+                    android:title="@string/menu_item_lbl_active" />
+                <item
+                    android:id="@+id/filterDisable"
+                    android:title="@string/menu_item_lbl_inactive" />
+            </group>
+        </menu>
+    </item>
+
+</menu>
